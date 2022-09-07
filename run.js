@@ -13,6 +13,8 @@ const newWeights = p.getWeights();
 console.log(oldWeights);
 console.log(newWeights);
 
+document.getElementById("weightDisplay").innerHTML = newWeights;
+
 createChart();
 
 //Create chart for the data
