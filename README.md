@@ -1,10 +1,10 @@
 # NeuralNetworkAPI
 
-This is my attempt at creating a simple version of a perceptron following [The Coding Train's](https://www.youtube.com/watch?v=ntKn5TPHHAk&list=PLRqwX-V7Uu6aCibgK1PTWWu9by6XFdCfh&index=2) explanation. 
+This is my attempt at creating a simple version of a perceptron following [The Coding Train's](https://www.youtube.com/watch?v=ntKn5TPHHAk&list=PLRqwX-V7Uu6aCibgK1PTWWu9by6XFdCfh&index=2) explanation.
 
 The video is uses p5.js however I have coded in pure javascript and used charts.js to visualise my data and AI.
 
-This is a very basic Perceptron; it takes in two inputs (x,y) and then returns a 1 if it is below the y=x line otherwise it returns a -1.
+This is a basic Perceptron; it takes in three inputs (the bias,x and y) and then returns a guess if the point is above or below a given linear line.(This is stated in the training data file).
 
 ## File Arrangements:
 

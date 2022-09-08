@@ -1,18 +1,19 @@
 class Perceptron {
-    constructor() {
+    constructor(n) {
         this.weights = [];
         this.lr = 0.1; //Learning rate
+        this.n = n; // Number of inputs, including input 0
 
         this.initialise();
     }
 
     initialise() {
-        for(let x = 0; x < 2; x++) {
+        for(let x = 0; x < this.n; x++) {
             this.weights[x] = (Math.random()*2 - 1);
         }
     }
 
-    // Guess the output based on 1 set of input
+    // Guess the output based on 1 set of input; input 1 will always be 1
     guess(inputs) {
         let sum = 0;
         for(let x = 0; x< this.weights.length; x++) {
@@ -22,7 +23,7 @@ class Perceptron {
         return sign(sum);
     }
 
-    // Train the data based on 1 set of input
+    // Train the data based on 1 set of input; input 1 will always be 1
     train(inputs, target) {
         let guessVal = this.guess(inputs);
         let error = target - guessVal;
